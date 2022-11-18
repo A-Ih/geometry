@@ -119,6 +119,7 @@ std::ostream& operator<<(std::ostream& out, const Matrix<T, N, M>& v) {
   return out;
 }
 
+// Print a matrix in row-major order
 template<typename T, size_t N, size_t M, size_t K>
 Matrix<T, N, K> mul(const Matrix<T, N, M>& lhs, const Matrix<T, M, K>& rhs) {
   using MRes = Matrix<T, N, K>;
